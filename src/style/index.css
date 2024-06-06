@@ -1,0 +1,443 @@
+html,
+body {
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px;
+    background-image: url('../assets/main/主页.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.c {
+    width: 1240px;
+    margin: 0px auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+/* 头部导航 */
+.head {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(to right, #3cb2e3, #a9edfc, #6fd1c7, #5ccabc, #cbf3ed, #d5f8f1);
+    opacity: 0.9;
+    z-index: 9999;
+    top: 0;
+    width: 100%;
+
+    div {
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+}
+
+.head_l {
+    padding-left: 40px;
+    line-height: 50px;
+    font-size: 20px;
+
+    li a {
+        display: flex;
+        align-items: center;
+        color: black;
+
+        img {
+            top: 20px;
+        }
+    }
+}
+
+.head_c {
+    line-height: 50px;
+    margin: 0px auto;
+
+    h1 {
+        display: inline;
+
+        span {
+            display: inline-block;
+            font-size: 20px;
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            border: 2px solid rgb(195, 255, 247);
+            border-radius: 50% 50%;
+            background: linear-gradient(#dbfc48, #f1fa8f, #f6a078, #ff5452);
+        }
+    }
+}
+
+.head_r {
+    img {
+        margin-right: 10px;
+    }
+
+    ul {
+        display: flex;
+
+        li {
+
+            a {
+                color: #000;
+                margin-right: 15px;
+
+            }
+        }
+    }
+}
+
+/* ---------------------各网页导航栏--------------------- */
+
+#index_main {
+    position: relative;
+    top: 45px;
+    width: 1220px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+}
+
+.nav {
+    margin: 10px;
+    background-color: rgba(190, 255, 255, 0.8);
+    height: 80px;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 10px 10px 8px rgba(5, 86, 58, 0.5);
+
+    div {
+        height: 80px;
+        margin-left: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        ul {
+            display: flex;
+            justify-content: space-around;
+
+            li {
+                height: 30px;
+                line-height: 30px;
+
+                a {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    color: #000;
+
+                    img {
+                        width: 30px;
+                        padding-right: 8px;
+                    }
+                }
+
+                ul {
+                    display: none;
+
+                }
+            }
+        }
+    }
+}
+
+.nav_main ul li a:hover {
+    transform: scale(1.05, 1.05);
+    color: rgb(255, 224, 110);
+}
+
+.nav_main ul li:hover ul {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: aqua;
+    border-radius: 5px;
+    z-index: 10;
+
+    li+li {
+        border-top: 1px solid #000;
+    }
+
+}
+
+#sign {
+    display: inline;
+    float: left;
+    width: 66px;
+    height: 66px;
+    border-radius: 50% 50%;
+    border: 2px solid #c13ee9;
+    margin: 5px 10px;
+    padding-right: 0;
+    overflow: hidden;
+
+    transition: transform 0.5s ease;
+    /* 添加过渡效果 */
+}
+
+#sign:hover {
+    cursor: pointer;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* 应用动画 */
+.continuous-rotate {
+    animation: rotate 2s linear infinite;
+    /* 持续旋转，2秒转一圈 */
+}
+
+#search {
+    form {
+        width: 196px;
+        height: 30px;
+        border: 2px solid #6739ff;
+        border-radius: 15px 15px;
+
+        input {
+            display: inline;
+            float: left;
+            margin-left: 10px;
+            background-color: transparent;
+            width: 156px;
+            height: 30px;
+            overflow: hidden;
+            border: none;
+        }
+
+        label {
+            button {
+                background-color: transparent;
+                border: none;
+                padding: 0;
+
+                img {
+                    float: right;
+                    width: 28px;
+                    height: 28px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+}
+
+#search form input:focus {
+    outline: none;
+}
+
+/* ---------------------轮播图 开始--------------------- */
+.banner {
+    position: relative;
+    /* float: left; */
+    width: 1200px;
+    height: 500px;
+    margin: 10px auto 0 auto;
+    box-shadow: 0 0 5px white;
+    overflow: hidden;
+}
+
+.banner .banner_p {
+    position: absolute;
+    width: 6000px;
+    height: 500px;
+    z-index: 1;
+}
+
+.banner .banner_p li {
+    float: left;
+    width: 1200px;
+    height: 500px;
+}
+
+.banner .banner_b {
+    position: absolute;
+    bottom: 20px;
+    width: 200px;
+    height: 10px;
+    z-index: 2;
+    left: 540px;
+    ;
+}
+
+.banner .banner_b li {
+    margin-left: 5px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #6CA1A0;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+}
+
+.banner .banner_b li.on {
+    background-color: #EEF5F7;
+    color: #6CA1A0;
+}
+
+/* ---------------------轮播图 结束--------------------- */
+
+/* ---------------------主要内容------------------------ */
+
+.practice_r {
+    /* content: "";
+    float: right;
+    width: 5px;
+    height: 5px;
+    cursor: pointer;
+    background-color: antiquewhite;
+    border: 2px solid #ed6464;
+    border-radius: 50%;
+    box-shadow: 3px 3px 2px #4f0505; */
+}
+
+.content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.box {
+    width: 96%;
+    margin: 0px auto;
+    color: #000;
+    margin-top: 10px;
+    background: rgba(227, 255, 255, 0.8);
+    border-radius: 15px 15px 0 0;
+
+    h2 {
+        height: 40px;
+        line-height: 40px;
+        font: 600 20px/1.5;
+        text-align: center;
+        background: linear-gradient(to right, #a5a5a5, #f5f5f5, #fff, #f5f5f5, #a5a5a5);
+        border-radius: 15px 15px 0 0;
+        border-bottom: 1px solid #000;
+
+        a {
+            color: #551a8b;
+        }
+    }
+
+}
+
+.box>div {
+    border-bottom: 1px solid #000;
+}
+
+.plate {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 10px;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        margin: 10px;
+        max-width: 90%;
+        height: auto;
+        background-image: linear-gradient(to bottom, #fff 0%, #e0e0e0 100%);
+        border: 3px solid hsl(4, 39%, 83%);
+    }
+
+    h3 {
+        background-color: antiquewhite;
+        border-radius: 4px;
+        box-shadow: 2px 2px 1px rgb(255, 214, 184);
+        text-align: center;
+
+        a {
+            margin-left: 10px;
+            color: #000;
+
+        }
+    }
+
+    h3 a:hover {
+        color: #ed6464;
+    }
+
+}
+
+.describe {
+    display: flex;
+    width: 370px;
+    min-height: 150px;
+    margin: 0 10px;
+    background-color: rgb(240, 233, 233);
+    border-radius: 5px;
+
+    div {
+        margin: 0 20px;
+    }
+}
+
+
+.foot {
+    margin: 45px 0 0 0;
+    position: relative;
+    width: 100%;
+    float: left;
+    background: rgb(200, 200, 200);
+
+}
+
+.foot_ {
+    position: relative;
+
+    dl {
+        float: right;
+        font-size: 12px;
+        margin: 10px 50px;
+
+        dd {
+            height: 18px;
+            line-height: 18px;
+
+            a {
+                color: #000;
+            }
+        }
+    }
+}
+
+.clear::both {
+    content: "";
+    display: block;
+    clear: both;
+}

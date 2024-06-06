@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia"> -->
+	<base href="../src/">
+	<link rel="stylesheet" href="style/index.css">
+	<link rel="shortcut icon" href="assets/main/图标.ico" />
+	<title>QQHde博客</title>
+	<style>
+	</style>
+</head>
+
+<body>
+	<!-- 头部 -->
+	<div class="head c">
+		<div class="c">
+			<div class="head_l">
+				<li><a href="#"><img src="assets/main/home.png" alt="" width="30px">首页</a></li>
+			</div>
+			<div class="head_c">
+				<h1>QQH <span>de</span> 博客</h1>
+			</div>
+			<div class="head_r">
+				<img src="assets/main/user.png" alt="" width="30px" height="30px">
+				<ul>
+					<li><a href="">登录</a></li>
+					<li><a href="">注册</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<!-- 页面主要区域 开始 -->
+	<div id="index_main" class="c">
+		<!-- 导航 -->
+		<div class="nav">
+			<img src="assets/main/sign.JPG" alt="" id="sign">
+			<audio id="audio" style="display: none;">
+				<source src="assets/main/qingtian.mp3" type="audio/mpeg">
+			</audio>
+			<div class="nav_main">
+				<ul>
+					<li><a href="views/education/education.html"><img src="assets/main/book.png" alt="">教育经历</a>
+						<ul>
+							<li><a href="#edu">小学</a></li>
+							<li><a href="#edu">中学</a></li>
+							<li><a href="#edu">大学</a></li>
+						</ul>
+					</li>
+					<li><a href="views/myhomeland/myhomeland.html"><img src="assets/main/家乡-灰.png" alt="">家乡</a>
+						<ul>
+							<li><a href="#hom">人文</a></li>
+							<li><a href="#hom">风景</a></li>
+							<li><a href="#hom">美食</a></li>
+						</ul>
+					</li>
+					<li><a href="views/myhobbise/hobbise.html"><img src="assets/main/感兴趣.png" alt="">个人兴趣</a>
+						<ul>
+							<li><a href="#int">爬山</a></li>
+							<li><a href="#int">羽毛球</a></li>
+							<li><a href="#int">读小说</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="https://github.com/QQHNB" target="_blank">
+							<img src="assets/main/gitlog.png" alt="">
+							github
+						</a>
+					</li>
+					<li><a href="views/others/other.html"><img src="assets/main/其他1.png" alt="">其他</a>
+						<ul>
+							<li><a href="views/others/massage.html" target="_blank">大学生信息收集表</a></li>
+						</ul>
+					</li>
+					<li id="search">
+						<form action="https://www.bing.com/search">
+							<input type="text" name="q" placeholder="智能搜索">
+							<label for="serch_name">
+								<button id="search_name">
+									<img src="assets/main/search.png" alt="">
+								</button>
+							</label>
+						</form>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- 轮播图 开始 -->
+		<section id="wrap" class="banner">
+			<ul id="pic" class="banner_p ">
+				<li><a href="views/myhomeland/homeland.html"><img src="assets/main/banner11.jpg" alt=""
+							width="100%"></a></li>
+				<li><a href="./updating.html"><img src="assets/main/banner22.jpg" alt="" width="100%"></a></li>
+				<li><a href="views/education/education.html"><img src="assets/main/banner33.jpg" alt=""
+							width="100%"></a></li>
+				<li><a href="updating.html"><img src="assets/main/banner44.png" alt="" width="100%"></a></li>
+			</ul>
+			<ol id="list" class="banner_b">
+				<li class="on">1</li>
+				<li>2</li>
+				<li>3</li>
+				<li>4</li>
+			</ol>
+		</section>
+		<!-- 内容 -->
+		<div class="content clear">
+			<!-- 教育经历 -->
+			<div class="box" id="edu" style="background-image: url('assets/main/schoolbcgi.jpg');
+			background-size: cover;
+			background-repeat: no-repeat;">
+				<h2 id="education">
+					<a href="views/education/education.html"><img src="" alt="">
+						教 育 经 历</a>
+				</h2>
+				<div class="plate">
+					<div class="text">
+						<a href="./updating.html"><img src="assets/main/小学.jpg" alt=""></a>
+						<h3 id="prm_sc"><a href="./updating.html">&#10149小学</a>
+						</h3>
+						<div class="describe">
+							<div><br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;赣州市赣县区江口中心小学创办于1925年3月，地处美丽的平江河畔上，占地面积6138平方米，校舍建筑面积2790平方米，是一所袖珍式学校。
+							</div>
+						</div>
+					</div>
+					<br>
+					<div class="text">
+						<a href="./views/education/mymiddleschool/middleschool.html"><img src="assets/main/中学.jpeg"
+								alt=""></a>
+						<div class="describe">
+							<div><br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;赣州市赣县区江口中学位于江西省赣州市赣县区江口镇南侧，学校创办于1957年，校园占地60余亩，29个教学班，在校学生1800多人，现有教职工101人，高级教师28人，中级教师31人，其中市县学科带头人10人，骨干教师8人。
+							</div>
+						</div>
+						<br>
+						<h3 id="mid_sc"><a href="./views/education/mymiddleschool/middleschool.html">&#10149初中</a></h3>
+						<a href="./views/education/mymiddleschool/middleschool.html"><img src="assets/main/gxzx.jpg"
+								alt=""></a>
+						<div class="describe">
+							<div><br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;赣州市赣县中学，位于赣州市赣县区，创办于1955年，1980年被省政府命名为江西省重点中学，是一所全日制公办高级中学。赣县中学现址位于贡江河畔，占地256亩，在校学生7000余人，正式教职工403人。学校先后被评为“江西省绿化先进单位”、“江西省文明单位”、“赣州市文明校园”等。
+
+							</div>
+						</div>
+					</div>
+					<br>
+					<div class="text">
+						<a href="./views/education/mycollege/gnnuindex.html"><img src="assets/main/gnnu.png" alt=""></a>
+						<h3 id="collage"><a href="./views/education/mycollege/gnnuindex.html">&#10149大学</a></h3>
+						<div class="describe">
+							<div>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;赣南师范大学（Gannan Normal
+								University），位于江西省赣州市，是省属本科师范院校、江西省一流学科建设高校，被列为江西省公费师范生培养高校，是中国政府奖学金、国际中文教师奖学金、江西省政府奖学金学生接收院校。
+								<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;学校创办于1958年6月，时为赣南师范专科学校；1984年更名为赣南师范学院，升格为省属本科师范院校；2016年3月，经教育部批准更名为赣南师范大学。
+							</div>
+						</div>
+					</div>
+					<br>
+				</div>
+			</div>
+			<!-- 家乡 -->
+			<div class="box" id="hom"
+				style="background-image: url('assets/main/ganzhou.jpg');background-size: 100%;background-repeat: no-repeat;  ">
+				<h2>
+					<a href="views/myhomeland/myhomeland.html"><img src="" alt="">
+						我 的 家 乡 —— 赣 州
+					</a>
+				</h2>
+				<div class="plate p1">
+					<div class="text">
+						<a href="./updating.html"><img src="assets/main/ganzhoufengjing.jpg" alt=""
+								style="margin-top:160px;margin-bottom: 27px;"></a>
+						<h3 id="hom_lan" style="top: 250px;"><a href="./updating.html">&#10149风景</a></h3>
+						<div class="describe">
+							<div><br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;赣州是我国当今保存最完好的北宋城，尤其是宋代文物最多的一座滨水城市，走进赣州古城如置身“宋城博物馆”，故有“江南宋城”之誉。这里有“江南第一石窟”——通天岩，有全国唯一的宋代铭文砖城墙，有沿用了近900年历史、由100条木舟用铁索连环而成的古代水上交通要道——古浮桥，有中国唯一仍在使用的古代下水道系统——古福寿沟，有中国八景文化的发祥地八境台、南宋词人辛弃疾留下千古绝唱《菩萨蛮·书江西造口壁》的郁孤台。
+							</div>
+						</div>
+					</div>
+					<br>
+					<div class="text" style=" margin-left: 10px;">
+						<a href="./updating.html"><img src="assets/main/ganzhoufood.png" alt=""
+								style="margin-top:90px;margin-bottom: 60px;"></a>
+						<h3 id="hom_foo"><a href="./updating.html">&#10149美食</a></h3>
+						<div class="describe">
+							<div><br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;赣南客家菜:
+								自成一派的融合菜系<br>
+								猜猜看：在赣州，大家都吃什么菜？
+								不是江西的赣菜，也不是毗邻的闽粤湘菜，而是一个独立于世的特殊菜系：客家菜。
+							</div>
+						</div>
+					</div>
+					<div class="text">
+						<a href="./views/myhomeland/homeland.html"><img src="assets/main/ganzhourw.jpg" alt=""
+								style="margin-bottom: 20px;"></a>
+						<h3 id="hom_cul">
+							<a href="./views/myhomeland/homeland.html">&#10149人文</a>
+						</h3>
+						<div class="describe">
+							<div><br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;赣南作为连贯南北地域的重要枢纽，往来赣州的名人大家络绎不绝，其文治武功光照千秋、泽被后世。如孔子后人孔宗翰、豪放派词人辛弃疾、民族英雄岳飞、“状元宰相”文天祥、理学家王阳明以及北宋名医陈恕等。同时，文人墨客为赣州留下了许多脍炙人口的名篇佳作，如苏轼的《〈虔州八境图〉八首并引》、辛弃疾的《菩萨蛮·书江西造口壁》、王安石的《虔州学记》、黄庭坚的《慈云寺》等。
+							</div>
+						</div>
+					</div>
+					<br>
+				</div>
+			</div>
+			<!-- 个人兴趣 -->
+			<div class="box" id="int"
+				style="background-image: url('assets/main/intresting.jpg');background-size: 100%;background-repeat: no-repeat; ">
+				<h2><a href="views/myhobbise/hobbise.html"><img src="" alt="">我 的 兴 趣 爱 好</a></h2>
+				<div class="plate p1">
+					<div class="text" style="margin-left: 10px;">
+						<a href="./updating.html"><img src="assets/main/xyj.jpg" alt=""
+								style="margin-top: 23px;margin-bottom: 29px;"></a>
+						<h3 id="hom_foo"><a href="./updating.html">&#10149读小说</a></h3>
+						<div class="describe">
+							<div><br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;当我们感到焦虑与浮躁的时候，说明我们离智慧远了一些，离愚蠢近了一些。读经典可以治疗这些毛病。你在经历情绪的波折，看看大佬的思想，感受一下自己的渺小。拓宽视野有利于平复情绪。
+							</div>
+						</div>
+					</div>
+					<br>
+					<div class="text">
+						<a href="./updating.html"><img src="assets/main/ymq.jpg" alt=""
+								style="margin-top: 101px;margin-bottom: 84px;"></a>
+						<h3 id="hom_lan"><a href="./updating.html">&#10149打羽毛球</a></h3>
+						<div class="describe">
+							<div><br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;生命在于运动，运动不仅能够强健体魄，还能磨炼意志。
+							</div>
+						</div>
+					</div>
+					<br>
+					<div class="text">
+						<a href="./updating.html"><img src="assets/main/climb.png" alt=""
+								style=" width: 330px;margin-top: 80px;margin-bottom: 54px;"></a>
+						<h3 id="hom_cul"><a href="./updating.html">&#10149爬山</a></h3>
+						<div class="describe">
+							<div><br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;黎明敢于挑战黑夜，才迎来了美丽的朝霞；早春敢于挑战寒冬，才赢得了万物勃勃生机的美景；人生也只有敢于向命运挑战，才能换取成功的喜悦。
+							</div>
+						</div>
+					</div>
+					<br>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 页脚 -->
+	<div class="foot">
+		<div class="foot_ c clear">
+			<dl>
+				<dt></dt>
+				<dd>&copy; 2024 Gnnu QQH</dd>
+				<dd>隐私政策</dd>
+				<dd>服务条款</dd>
+				<dd>联系信息：2664856683@qq.com</dd>
+			</dl>
+			<dl>
+				<dt></dt>
+				<dd><a href="#">返回顶部</a></dd>
+				<dd>技术支持</dd>
+				<dd>帮助</dd>
+				<dd>反馈与建议</dd>
+			</dl>
+		</div>
+	</div>
+
+	<script src="script/index.js"></script>
+</body>
+
+</html>
