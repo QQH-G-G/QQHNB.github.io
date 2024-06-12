@@ -1,103 +1,164 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
-    <link rel="stylesheet" href="./middleschool.css">
-    <link rel="shortcut icon" href="../../../../素材/img/图标.ico" />
     <title>QQHde博客</title>
-    <style>
-    </style>
+    <meta name="format-detection" content="telephone=no">
+    <base href="../../../../src/">
+    <link rel="shortcut icon" href="assets/main/图标.ico" />
+
+    <link rel="stylesheet" href="style/base.css">
+    <link href="style/education/educationindex.css" rel="stylesheet">
+    <link rel="stylesheet" href="style/education/template.css">
+    <link rel="stylesheet" href="style/education/templatetoo.css">
+
+    <script type="text/javascript" src="script/education/template/jquery-1.8.3.min.js"></script>
+    <script src="script/education/template/common.js"></script>
+    <script src="script/education/template/jquery.touchwipe.min.js"></script>
+    <script type="text/javascript" src="script/education/template/jquery.banner.revolution.min.js"></script>
+    <script type="text/javascript" src="script/education/template/banner.js"></script>
+    <script type="text/javascript" src="script/education/template/swiper.scrollbar-1.2.js"></script>
+    <script type="text/javascript" src="script/education/template/swiper-1.9.1.min.js"></script>
+    <script type="text/javascript" src="script/education/template/jquery.fs.boxer.min.js"></script>
+    <script type="text/javascript" src="script/education/template/jquery.slides.min.js"></script>
+    <script type="text/javascript" src="script/education/template/customs.js"></script>
+    <script src="script/education/template/jquery.isotope.min.js"></script>
+    <script src="script/education/template/custom.js"></script>
+    <script src="script/education/template/modernizr.custom.js"></script>
+
+
 </head>
 
 <body>
+    <link rel="stylesheet" type="text/css" media="all" href="css/style.css" />
     <!-- 头部 -->
-    <div class="head c">
-        <div class="c">
-            <div class="head_l">
-                <li><a href="../../../index.html"><img src="../../../../素材/img/home.png" alt="" width="30px">首页</a></li>
+    <header class="header">
+        <div class="container ">
+            <!-- 网站Logo -->
+            <div class="logo-main fl">
+                <a class="logo left" href="../index.html" title=""><img src="assets/main/back.png"
+                        width="30px" />首页</a><a>&nbsp;&gt;</a><a
+                    href="views/education/education.html">教育经历</a><a>&gt;初中生活</a>
             </div>
-            <div class="head_c">
-                <h1>QQH <span>de</span> 博客</h1>
-            </div>
-            <div class="head_r">
-                <img src="../../../../素材/img/user.png" alt="" width="30px" height="30px">
-                <ul>
-                    <li><a href="">登录</a></li>
-                    <li><a href="">注册</a></li>
+            <!-- 网站Logo end -->
+            <!-- 导航菜单 -->
+            <nav class="header-menu fr">
+                <div>
+                    <ul id="" class="menu">
+                        <li class="menu-item"><a href="views/education/myprimaryschool/primaryschool.html">我的小学</a>
+                            <ul class="sub-menu">
+                            </ul>
+                        </li>
+                        <li class="menu-item hover"><a
+                                href="views/education/mymiddleschool/highmiddleschool.html">初中经历</a>
+                            <ul class="sub-menu">
+                                <li class="menu-item"><a
+                                        href="views/education/mymiddleschool/middleschool.html">初中生活</a></li>
+                                <li class="menu-item"><a
+                                        href="views/education/mymiddleschool/highmiddleschool.html">高中学习</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item "><a href="views/education/mycollege/gnnuindex.html">大学校园</a>
+                            <ul class="sub-menu">
+                                <li class="menu-item"><a href="views/education/mycollege/basicMessage.html">基本信息</a>
+                                </li>
+                                <li class="menu-item"><a href="views/education/mycollege/myprofession.html">专业信息</a>
+                                </li>
+                                <li class="menu-item"><a href="views/education/mycollege/gnnulandscape.html">校园风光</a>
+                                </li>
+                                <li class="menu-item"><a href="views/education/mycollege/schedule2024.html">课程表</a></li>
+                                <li class="menu-item"><a href="views/education/mycollege/mychum.html">室友</a></li>
+                                <li class="menu-item"><a
+                                        href="views/education/mycollege/collectMessage.html">大学生信息收集表</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- 导航菜单end -->
+        </div>
+    </header>
+
+    <div class="clearfix"></div>
+    <!-- 头部end -->
+    <script>
+        $(function () {
+            var swiper = new Swiper('.swiper1', {
+                pagination: '.pagination1',
+                loop: true,
+                grabCursor: true
+            });
+            //Navigation arrows
+            $('.arrow-left').click(function (e) {
+                e.preventDefault()
+                swiper.swipePrev()
+            });
+            $('.arrow-right').click(function (e) {
+                e.preventDefault()
+                swiper.swipeNext()
+            });
+            //Clickable pagination
+            $('.pagination1 .swiper-pagination-switch').click(function () {
+                swiper.swipeTo($(this).index())
+            })
+        });
+    </script>
+    <div class="fullwidthbanner-container">
+        <div class="b_shadow"></div>
+        <div class="fullwidthbanner" style="background-size: cover;">
+            <ul>
+                <li>
+                    <img src="assets/main/zhongxue.jpeg" alt="" width="100%" />
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <div class="n_top">
+            <h2>江口中学</h2>
+            <span class="n_line"></span>
+        </div>
+        <div class="n_about">
+            <h2 class="view-title" style="text-align:center;">学校简介</h2>
+            <p>赣州市赣县区江口中学创办于1957年，位于江西省赣州市赣县区江口镇南侧。学校占地60余亩，拥有29个教学班，在校学生1800多人，教职工101人，其中包括高级教师28人，中级教师31人，市县学科带头人10人，骨干教师8人。
+            </p>
+            <section>
+                <h2 class="view-title" style="text-align:center;">办学特色</h2>
+                <p>学校以“创建和谐校园，推进素质教育”为办学理念，坚持“以人为本，以学生发展为本”的教学理念，强化德育为首，提出“以人为本，创建和谐育人环境”的办学思路。学校通过举行规范的升国旗仪式，开展“文明班级”、“文明寝室”、“每周之星”评比活动，培养学生遵守社会公德的意识、集体意识和文明行为习惯。
+                </p>
+            </section>
+            <section class="awards">
+                <h2 class="view-title" style="text-align:center;">所获荣誉</h2>
+                <ul style="text-align:center;">
+                    <li>江西省中小学实验先进学校</li>
+                    <li>赣州市德育示范校</li>
+                    <li>赣州市文明校园</li>
+                    <li>办学业绩综合考核先进单位</li>
                 </ul>
+            </section>
+            <section class="campus-environment">
+                <h2 class="view-title" style="text-align:center;">校园环境</h2>
+                <p>2021年，学校教学楼进行了改扩建，建筑面积450平方米；拆除老教学楼（预制空心楼板，砖混结构三层），建筑面积1800平方米；硬化地面600平方米、改造男女生宿舍楼自来水等附属工程。</p>
+            </section>
+        </div>
+    </div>
+    <!--about us-->
+    <footer>
+        <div class="container ">
+            <div class="footer_l fl">
+                <div class="clearfix links">
+                    <a href="about.html">&copy; 2024 Gnnu QQH</a>|<a href="news.html">隐私政策</a>|<a
+                        href="prolist.html">服务条款</a>|<a href="join.html">技术支持</a>|<a href="media.html">帮助</a>|<a
+                        href="contact.html">反馈与建议</a>
+                </div>
+                <div class="copy"><a href="">返回顶部</a><br />
+                    <a href=""> 联系信息：2664856683@qq.com</a>
+                </div>
             </div>
         </div>
-    </div>
+    </footer>
 
-    <!-- 页面主要区域 开始 -->
-    <div id="index_main" class="c">
-        <!-- 导航 -->
-        <div class="nav">
-            <a href=""><img src="../../../../素材/picture/sign.JPG" alt="" id="sign"></a>
-            <div class="nav_main">
-                <h2>教育经历</h2>
-                <ul>
-                    <li><a href="../myprimaryschool/primaryschool.html">小学</a></li>
-                    <li><a href="../mymiddleschool/middleschool.html">中学</a></li>
-                    <li><a href="#" style="color: rgb(255, 163, 106); font-size:18px;font-weight: 700;">大学</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-    <div class="mainconter">
-        <img src="../../../../素材/picture/gxzx.jpg" alt="">
-        <br> 赣州市赣县中学前身可追溯至1898年创办的“江西省立赣县中学”。创建之初，学校名为“致用中学堂”，先后易名虔南师范学堂、省立第二师范学校、省立第三中学、省立赣县中学、省立赣州中学。
-        <br> 新中国成立后，赣州设立行署，赣州市区（今章贡区）同为赣州地区行署和赣县人民政府所在地。
-        <br>1955年秋，赣县人民政府在赣州市郊水东镇虎岗村新建“赣县初级中学”；
-        <br> 文革期间，学校受到冲击，搬迁至赣县桃江更名为“赣县共产主义劳动大学”；
-        <br>1969年，赣县县城从赣州市区迁至现址梅林镇，在县城建立“赣县五.七学校”，是一所中小学一贯制学校；
-        <br>1975年4月，学校小学部剥离，更名为“江西省赣县中学”；
-        <br>1980年，学校被省教育厅确定为江西省重点中学；
-        <br>2017年，赣县撤县设区，学校更名为“赣州市赣县中学”。
-    </div>
-    <!-- 页脚 -->
-    <div class="foot">
-        <div class="foot_ c clear">
-            <dl>
-                <dt></dt>
-                <dd>&copy; 2024 Gnnu QQH</dd>
-                <dd>隐私政策</dd>
-                <dd>服务条款</dd>
-                <dd>联系信息：2664856683@qq.com</dd>
-            </dl>
-            <dl>
-                <dt></dt>
-                <dd><a href="#">返回顶部</a></dd>
-                <dd>技术支持</dd>
-                <dd>帮助</dd>
-                <dd>反馈与建议</dd>
-            </dl>
-        </div>
-    </div>
-
-    <script src=""></script>
 </body>
 
 </html>
-<!-- <div id="myheader">
-        <div id="myflag"><img src="" alt="">网站标志性flag</div>
-        <div id="mynavlgation">
-            <a href="../index.html">首页</a>|
-            <a href="">基本信息</a>|
-            <a href="">我的专业</a>|
-            <a href="">我的室友</a>|
-            <a href="./schedule2024.html">我的课程表</a>|
-            <a href="">课外生活</a>|
-            <a href="./massage.html">大学生信息注册表</a>
-        </div>
-    </div>
-    <div id="mainconter">
-        <div>基本信息亮点简介导航</div>
-    </div>
-    <div id="myfoot">
-        <p>版权所有：qqh 技术支持：qqh 电子邮件：2664856683@qq.com  联系电话：13263063135</p>
-    </div> -->

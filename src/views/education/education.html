@@ -6,8 +6,28 @@
     <title>QQHde博客</title>
     <meta name="format-detection" content="telephone=no">
     <base href="../../../src/">
-    <link href="style/education/educationindex.css" rel="stylesheet">
     <link rel="shortcut icon" href="assets/main/图标.ico" />
+
+    <link rel="stylesheet" href="style/base.css">
+    <link href="style/education/educationindex.css" rel="stylesheet">
+    <link rel="stylesheet" href="style/education/template.css">
+    <link rel="stylesheet" href="style/education/templatetoo.css">
+
+    <script type="text/javascript" src="script/education/template/jquery-1.8.3.min.js"></script>
+    <script src="script/education/template/common.js"></script>
+    <script src="script/education/template/jquery.touchwipe.min.js"></script>
+    <script type="text/javascript" src="script/education/template/jquery.banner.revolution.min.js"></script>
+    <script type="text/javascript" src="script/education/template/banner.js"></script>
+    <script type="text/javascript" src="script/education/template/swiper.scrollbar-1.2.js"></script>
+    <script type="text/javascript" src="script/education/template/swiper-1.9.1.min.js"></script>
+    <script type="text/javascript" src="script/education/template/jquery.fs.boxer.min.js"></script>
+    <script type="text/javascript" src="script/education/template/jquery.slides.min.js"></script>
+    <script type="text/javascript" src="script/education/template/customs.js"></script>
+    <script src="script/education/template/jquery.isotope.min.js"></script>
+    <script src="script/education/template/custom.js"></script>
+    <script src="script/education/template/modernizr.custom.js"></script>
+
+
 </head>
 
 <body>
@@ -17,22 +37,23 @@
         <div class="container ">
             <!-- 网站Logo -->
             <div class="logo-main fl">
-                <a class="logo left" href="index.html" title=""><img src="assets/main/back.png" width="30px" />首页</a>
+                <a class="logo left" href="../index.html" title=""><img src="assets/main/back.png" width="30px" />首页</a>
             </div>
             <!-- 网站Logo end -->
             <!-- 导航菜单 -->
             <nav class="header-menu fr">
                 <div>
                     <ul id="" class="menu">
-                        <li class="menu-item hover"><a
-                                href="views/education/myprimaryschool/primaryschool.html">我的小学</a>
+                        <li class="menu-item "><a href="views/education/myprimaryschool/primaryschool.html">我的小学</a>
                             <ul class="sub-menu">
                             </ul>
                         </li>
-                        <li class="menu-item"><a href="views/education/highmiddleschool.html">初中经历</a>
+                        <li class="menu-item"><a href="views/education/mymiddleschool/highmiddleschool.html">初中经历</a>
                             <ul class="sub-menu">
-                                <li class="menu-item"><a href="views/education/middleschool.html">初中生活</a></li>
-                                <li class="menu-item"><a href="views/education/middleschool.html">高中学习</a></li>
+                                <li class="menu-item"><a
+                                        href="views/education/mymiddleschool/middleschool.html">初中生活</a></li>
+                                <li class="menu-item"><a
+                                        href="views/education/mymiddleschool/highmiddleschool.html">高中学习</a></li>
                             </ul>
                         </li>
                         <li class="menu-item "><a href="views/education/mycollege/gnnuindex.html">大学校园</a>
@@ -56,12 +77,39 @@
         </div>
     </header>
 
+    <div class="clearfix"></div>
+    <!-- 头部end -->
+    <script>
+        $(function () {
+            var swiper = new Swiper('.swiper1', {
+                pagination: '.pagination1',
+                loop: true,
+                grabCursor: true
+            });
+            //Navigation arrows
+            $('.arrow-left').click(function (e) {
+                e.preventDefault()
+                swiper.swipePrev()
+            });
+            $('.arrow-right').click(function (e) {
+                e.preventDefault()
+                swiper.swipeNext()
+            });
+            //Clickable pagination
+            $('.pagination1 .swiper-pagination-switch').click(function () {
+                swiper.swipeTo($(this).index())
+            })
+        });
+    </script>
     <div class="fullwidthbanner-container">
         <div class="b_shadow"></div>
-        <div class="fullwidthbanner">
+        <div class="fullwidthbanner" style="background-size: cover;">
             <ul>
                 <li>
                     <img src="assets/education/educationbkg.jpg" alt="" width="100%" />
+                </li>
+                <li>
+                    <img src="assets/education/gnnuimg.png" width="100%" alt="" />
                 </li>
             </ul>
         </div>
@@ -86,147 +134,147 @@
                                 <ul id="filters" class="option-set clearfix" data-option-key="filter">
                                     <li><a href="#filter" data-option-value=".web-design" style="border:none;">小学</a>
                                     </li>
-                                    <li><a href="#filter" data-option-value=".photo">初中生活</a></li>
-                                    <li><a href="#filter" data-option-value=".ios-app">高中学习</a></li>
-                                    <li><a href="#filter" data-option-value=".graphic">大学校园</a></li>
-                                    <li><a href="#filter" data-option-value=".showers">课外阅读</a></li>
+                                    <li><a href="#filter" data-option-value=".middleschoool">初中生活</a></li>
+                                    <li><a href="#filter" data-option-value=".highmiddleschool">高中学习</a></li>
+                                    <li><a href="#filter" data-option-value=".universally">大学校园</a></li>
+                                    <li><a href="#filter" data-option-value=".reading">课外阅读</a></li>
                                 </ul><!--end:filters-->
                             </div>
                         </div><!--end:wrapper-->
-                        <ul id="container" class=" clickable cs-style-5 grid clearfix isotope"
-                            style="position: relative; overflow: hidden; width: 1000px;">
-                            <li class="element kitchen isotope-item"
-                                style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(0px, 0px, 0px);">
-                                <a href="proview.html">
-                                    <figure>
-                                        <img src="images/cf03.jpg" alt="">
-                                        <figcaption>
-                                            <h3>厨房龙头</h3>
-                                            <div class="meta-box clearfix">
-                                                <span class="entry-categories">精铜阀体，结构严密;陶瓷阀芯，经久耐用</span>
-                                            </div>
-                                            <footer>
-                                                <div id="nivo-lightbox-demo">
-                                                    <p> <span data-lightbox-gallery="gallery1" id="nivo-lightbox-demo">
-                                                            View</span> </p>
-                                                </div>
-                                            </footer>
 
-                                        </figcaption>
-                                    </figure>
-                                </a>
-                            </li>
-                            <li class="element kitchen isotope-item"
-                                style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(0px, 0px, 0px);">
+                        <ul id="container" class=" clickable cs-style-5 grid clearfix isotope"
+                            style="position: relative; overflow: hidden; width: 1475px;">
+                            <!-- 小学 -->
+                            <li class="element web-design isotope-item"
+                                style="position: absolute; left: 0px; top: 0px; ">
                                 <a href="proview.html">
                                     <figure>
-                                        <img src="images/cf2.jpg" alt="">
-                                    </figure>
-                                </a>
-                            </li>
-                            <li class="element kitchen isotope-item"
-                                style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(295px, 0px, 0px);">
-                                <a href="proview.html">
-                                    <figure>
-                                        <img src="images/cf03.jpg" alt="">
-                                    </figure>
-                                </a>
-                            </li>
-                            <li class="element photo isotope-item"
-                                style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(0px, 0px, 0px);">
-                                <a href="proview.html">
-                                    <figure>
-                                        <img src="images/xl02.jpg" alt="">
-                                    </figure>
-                                </a>
-                            </li>
-                            <li class="element photo isotope-item"
-                                style="display: none; position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(0px, 0px, 0px);">
-                                <a href="proview.html">
-                                    <figure>
-                                        <img src="images/0502001787.jpg" alt="">
+                                        <img src="assets/education/schoolcolorpicture.jpg" alt="">
                                     </figure>
                                 </a>
                             </li>
                             <li class="element web-design isotope-item"
-                                style="display: none; position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(295px, 0px, 0px);">
+                                style="position: absolute; left: 0px; top: 0px;">
                                 <a href="proview.html">
                                     <figure>
-                                        <img src="images/xy01.jpg" alt="">
+                                        <img src="assets/education/classroom.jpg" alt="">
                                     </figure>
                                 </a>
                             </li>
                             <li class="element web-design isotope-item"
-                                style="display: none; position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(295px, 0px, 0px);">
+                                style="position: absolute; left: 0px; top: 0px; ">
                                 <a href="proview.html">
                                     <figure>
-                                        <img src="images/xy02.jpg" alt="">
+                                        <img src="assets/education/jiangkouzhongxinxiaoxue.webp" alt="">
                                     </figure>
                                 </a>
                             </li>
-                            <li class="element ios-app isotope-item"
-                                style="display: none; position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(590px, 0px, 0px);">
+                            <!-- 中学 -->
+                            <li class="element middleschoool isotope-item"
+                                style="position: absolute; left: 0px; top: 0px; ">
                                 <a href="proview.html">
                                     <figure>
-                                        <img src="images/pro.jpg" alt="">
+                                        <img src="assets/education/zhongxue.png" alt="">
                                     </figure>
                                 </a>
                             </li>
-                            <li class="element ios-app isotope-item"
-                                style="display: none; position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(590px, 0px, 0px);">
+                            <li class="element middleschoool isotope-item"
+                                style="position: absolute; left: 0px; top: 0px;">
                                 <a href="proview.html">
                                     <figure>
-                                        <img src="images/ly1.jpg" alt="">
+                                        <img src="assets/education/fourstudents.jpg" alt="">
                                     </figure>
                                 </a>
                             </li>
-                            <li class="element ios-app isotope-item"
-                                style="display: none; position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(590px, 0px, 0px);">
+                            <li class="element middleschoool isotope-item"
+                                style="position: absolute; left: 0px; top: 0px; ">
                                 <a href="proview.html">
                                     <figure>
-                                        <img src="images/ly2.jpg" alt="">
+                                        <img src="assets/main/zhongxue.jpeg" alt="">
                                     </figure>
                                 </a>
                             </li>
-                            <li class="element ios-app isotope-item"
-                                style="display: none; position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(590px, 0px, 0px);">
+                            <!-- 高中 -->
+
+                            <li class="element highmiddleschool isotope-item"
+                                style="position: absolute; left: 0px; top: 0px;">
                                 <a href="proview.html">
                                     <figure>
-                                        <img src="images/ly3.jpg" alt="">
+                                        <img src="assets/education/gxzximgs1.png" alt="">
                                     </figure>
                                 </a>
                             </li>
-                            <li class="element graphic isotope-item"
-                                style="display: none; position: absolute;left: 0px; top: 0px; -webkit-transform: translate3d(885px, 0px, 0px);">
+                            <li class="element highmiddleschool isotope-item"
+                                style="position: absolute; left: 0px; top: 0px;">
                                 <a href="proview.html">
                                     <figure>
-                                        <img src="images/yg01.jpg" alt="">
+                                        <img src="assets/education/gxzximgs2.jpg" alt="">
                                     </figure>
                                 </a>
                             </li>
-                            <li class="element graphic isotope-item"
-                                style="display: none; position: absolute;left: 0px; top: 0px; -webkit-transform: translate3d(885px, 0px, 0px);">
+                            <li class="element highmiddleschool isotope-item"
+                                style="position: absolute; left: 0px; top: 0px;">
                                 <a href="proview.html">
                                     <figure>
-                                        <img src="images/yg05.jpg" alt="">
+                                        <img src="assets/education/gxzxground.webp" alt="">
                                     </figure>
                                 </a>
                             </li>
-                            <li class="element graphic isotope-item"
-                                style="display: none; position: absolute;left: 0px; top: 0px; -webkit-transform: translate3d(885px, 0px, 0px);">
+                            <!-- 大学 -->
+                            <li class="element universally isotope-item"
+                                style="position: absolute;left: 0px; top: 0px;">
                                 <a href="proview.html">
                                     <figure>
-                                        <img src="images/yg04.jpg" alt="">
+                                        <img src="assets/education/gnnuimgs1.png" alt="">
                                     </figure>
                                 </a>
                             </li>
+                            <li class="element universally isotope-item"
+                                style="position: absolute;left: 0px; top: 0px; ">
+                                <a href="proview.html">
+                                    <figure>
+                                        <img src="assets/education/gnnuname.jpg" alt="">
+                                    </figure>
+                                </a>
+                            </li>
+                            <li class="element universally isotope-item"
+                                style="position: absolute;left: 0px; top: 0px; ">
+                                <a href="proview.html">
+                                    <figure>
+                                        <img src="assets/education/gnnuimgs3.jpg" alt="">
+                                    </figure>
+                                </a>
+                            </li>
+                            <!-- 课外阅读 -->
+                            <li class="element reading isotope-item" style="position: absolute; left: 0px; top: 0px; ">
+                                <a href="proview.html">
+                                    <figure>
+                                        <img src="assets/education/xyj.jpg" alt="">
+                                    </figure>
+                                </a>
+                            </li>
+                            <li class="element reading isotope-item" style="position: absolute; left: 0px; top: 0px; ">
+                                <a href="proview.html">
+                                    <figure>
+                                        <img src="assets/education/book.jpg" alt="">
+                                    </figure>
+                                </a>
+                            </li>
+                            <li class="element reading isotope-item" style="position: absolute; left: 0px; top: 0px; ">
+                                <a href="proview.html">
+                                    <figure>
+                                        <img src="assets/education/reading.jpg" alt="">
+                                    </figure>
+                                </a>
+                            </li>
+                            <div class="clear"> </div>
                         </ul>
                     </div><!--end:typo1-->
                 </div>
             </div>
         </div>
     </div>
-    <!-- <script type="text/javascript" src="js/home.js"></script> -->
+
     <!--about us-->
     <footer>
         <div class="container ">

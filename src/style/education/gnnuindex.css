@@ -29,7 +29,7 @@ li {
 
 /* 头部导航 */
 .head {
-    position: fixed;
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -115,6 +115,8 @@ li {
 }
 
 .nav {
+    position: sticky;
+    top: 0;
     margin: 10px;
     background-color: rgba(190, 255, 255, 0.8);
     height: 80px;

@@ -1,0 +1,164 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>QQHde博客</title>
+    <meta name="format-detection" content="telephone=no">
+    <base href="../../../../src/">
+    <link rel="shortcut icon" href="assets/main/图标.ico" />
+
+    <link rel="stylesheet" href="style/base.css">
+    <link href="style/education/educationindex.css" rel="stylesheet">
+    <link rel="stylesheet" href="style/education/template.css">
+    <link rel="stylesheet" href="style/education/templatetoo.css">
+
+    <script type="text/javascript" src="script/education/template/jquery-1.8.3.min.js"></script>
+    <script src="script/education/template/common.js"></script>
+    <script src="script/education/template/jquery.touchwipe.min.js"></script>
+    <script type="text/javascript" src="script/education/template/jquery.banner.revolution.min.js"></script>
+    <script type="text/javascript" src="script/education/template/banner.js"></script>
+    <script type="text/javascript" src="script/education/template/swiper.scrollbar-1.2.js"></script>
+    <script type="text/javascript" src="script/education/template/swiper-1.9.1.min.js"></script>
+    <script type="text/javascript" src="script/education/template/jquery.fs.boxer.min.js"></script>
+    <script type="text/javascript" src="script/education/template/jquery.slides.min.js"></script>
+    <script type="text/javascript" src="script/education/template/customs.js"></script>
+    <script src="script/education/template/jquery.isotope.min.js"></script>
+    <script src="script/education/template/custom.js"></script>
+    <script src="script/education/template/modernizr.custom.js"></script>
+
+
+</head>
+
+<body>
+    <link rel="stylesheet" type="text/css" media="all" href="css/style.css" />
+    <!-- 头部 -->
+    <header class="header">
+        <div class="container ">
+            <!-- 网站Logo -->
+            <div class="logo-main fl">
+                <a class="logo left" href="../index.html" title=""><img src="assets/main/back.png" width="30px" />首页</a>
+                <a>&nbsp;&gt;</a><a href="views/education/education.html">教育经历</a><a>&gt;高中学习</a>
+            </div>
+            <!-- 网站Logo end -->
+            <!-- 导航菜单 -->
+            <nav class="header-menu fr">
+                <div>
+                    <ul id="" class="menu">
+                        <li class="menu-item"><a href="views/education/myprimaryschool/primaryschool.html">我的小学</a>
+                            <ul class="sub-menu">
+                            </ul>
+                        </li>
+                        <li class="menu-item hover"><a
+                                href="views/education/mymiddleschool/highmiddleschool.html">初中经历</a>
+                            <ul class="sub-menu">
+                                <li class="menu-item"><a
+                                        href="views/education/mymiddleschool/middleschool.html">初中生活</a></li>
+                                <li class="menu-item"><a
+                                        href="views/education/mymiddleschool/highmiddleschool.html">高中学习</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item "><a href="views/education/mycollege/gnnuindex.html">大学校园</a>
+                            <ul class="sub-menu">
+                                <li class="menu-item"><a href="views/education/mycollege/basicMessage.html">基本信息</a>
+                                </li>
+                                <li class="menu-item"><a href="views/education/mycollege/myprofession.html">专业信息</a>
+                                </li>
+                                <li class="menu-item"><a href="views/education/mycollege/gnnulandscape.html">校园风光</a>
+                                </li>
+                                <li class="menu-item"><a href="views/education/mycollege/schedule2024.html">课程表</a></li>
+                                <li class="menu-item"><a href="views/education/mycollege/mychum.html">室友</a></li>
+                                <li class="menu-item"><a
+                                        href="views/education/mycollege/collectMessage.html">大学生信息收集表</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- 导航菜单end -->
+        </div>
+    </header>
+
+    <div class="clearfix"></div>
+    <!-- 头部end -->
+    <script>
+        $(function () {
+            var swiper = new Swiper('.swiper1', {
+                pagination: '.pagination1',
+                loop: true,
+                grabCursor: true
+            });
+            //Navigation arrows
+            $('.arrow-left').click(function (e) {
+                e.preventDefault()
+                swiper.swipePrev()
+            });
+            $('.arrow-right').click(function (e) {
+                e.preventDefault()
+                swiper.swipeNext()
+            });
+            //Clickable pagination
+            $('.pagination1 .swiper-pagination-switch').click(function () {
+                swiper.swipeTo($(this).index())
+            })
+        });
+    </script>
+    <div class="fullwidthbanner-container">
+        <div class="b_shadow"></div>
+        <div class="fullwidthbanner" style="background-size: cover;">
+            <ul>
+                <li>
+                    <img src="assets/education/gxzximgs1.jpg" alt="" width="100%" />
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="n_top">
+            <h1 class="view-title">赣州市赣县区江口中学</h1>
+            <span class="view-element"></span>
+            <p>创办于1957年，位于江西省赣州市赣县区江口镇南侧。</p>
+        </div>
+        <div class="n_about">
+            <h2 class="view-title" style="text-align:center;">学校简介</h2>
+            <p>赣县中学是一所规模较大的农村初中，校园占地60余亩，拥有29个教学班和1800多名学生。教职工总数为101人，其中包括28名高级教师和31名中级教师。</p>
+        </div>
+        <div class="school-features">
+            <h2 class="view-title" style="text-align:center;">办学特色</h2>
+            <p>学校以“创建和谐校园，推进素质教育”为办学理念，坚持德育为首，提出“以人为本，创建和谐育人环境”的办学思路。学校强化学生行为规范养成，开展“文明班级”、“文明寝室”、“每周之星”评比活动，培养学生的集体意识和文明行为习惯。
+            </p>
+        </div>
+        <div class="awards">
+            <h2 class="view-title" style="text-align:center;">所获荣誉</h2>
+            <ul style="text-align:center;">
+                <li>江西省中小学实验先进学校</li>
+                <li>赣州市德育示范校</li>
+                <li>赣州市文明校园</li>
+                <li>办学业绩综合考核先进单位</li>
+            </ul>
+        </div>
+        <div class="campus-environment">
+            <h2 class="view-title" style="text-align:center;">校园环境</h2>
+            <p>2021年，学校教学楼进行了改扩建，包括建筑面积450平方米的新教学楼，拆除了1800平方米的老教学楼，并进行了地面硬化和宿舍楼自来水改造等附属工程。</p>
+        </div>
+    </div>
+    <!--about us-->
+    <footer>
+        <div class="container ">
+            <div class="footer_l fl">
+                <div class="clearfix links">
+                    <a href="about.html">&copy; 2024 Gnnu QQH</a>|<a href="news.html">隐私政策</a>|<a
+                        href="prolist.html">服务条款</a>|<a href="join.html">技术支持</a>|<a href="media.html">帮助</a>|<a
+                        href="contact.html">反馈与建议</a>
+                </div>
+                <div class="copy"><a href="">返回顶部</a><br />
+                    <a href=""> 联系信息：2664856683@qq.com</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
