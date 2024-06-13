@@ -10,31 +10,7 @@
     <link rel="stylesheet" href="style/education/common.css">
     <link rel="shortcut icon" href="assets/main/图标.ico" />
     <title>QQHde博客</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
-    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=QHGs3lzkwAnvENATgNxcpuhR"></script>
-    <input type="hidden" id="hfTitle" value="gnnumap" />
     <style>
-        .plate {
-            margin: 40px 0px;
-
-            .part {
-                position: relative;
-                display: inline;
-                float: left;
-
-                img {
-                    display: inline;
-                    float: right;
-                }
-
-                .describe {
-                    position: relative;
-                    display: inline-block;
-                }
-
-            }
-        }
     </style>
 </head>
 
@@ -67,22 +43,17 @@
             <div class="nav_main">
                 <ul>
                     <li><a href="views/education/mycollege/gnnuindex.html">大学主页</a></li>
-                    <li class="hove"><a href="views/education/mycollege/basicmessage.html">基本信息</a></li>
+                    <li><a href="views/education/mycollege/basicmessage.html">基本信息</a></li>
                     <li><a href="views/education/mycollege/gnnulandscape.html">校园风景</a></li>
                     <li><a href="views/education/mycollege/myprofession.html">我的专业</a></li>
                     <li><a href="views/education/mycollege/mychum.html">我的室友</a></li>
                     <li><a href="views/education/mycollege/schedule2024.html">我的课程表</a></li>
-                    <li><a href="views/education/mycollege/freetime.html">课外生活</a></li>
+                    <li class="hove"><a href="views/education/mycollege/freetime.html">课外生活</a></li>
                     <li><a href="views/education/mycollege/collectMessages.html">大学生信息注册</a></li>
                 </ul>
             </div>
         </div>
-        <iframe src="https://baike.baidu.com/item/%E8%B5%A3%E5%8D%97%E5%B8%88%E8%8C%83%E5%A4%A7%E5%AD%A6/5251678"
-            width="1100" height="600">
-            <p>您的浏览器不支持 iframes。</p>
-        </iframe>
-        <div id="QWTMAP"
-            style="height:500px; margin-top: 50px; box-shadow: 2px 2px 2px #000,2px 2px 2px #000;margin-bottom: 80px; ">
+        <div class="content">
         </div>
     </div>
     <!--  -->
@@ -108,28 +79,7 @@
         </div>
     </div>
 
-
-    <script type="text/javascript">
-        // 百度地图API功能
-        var map = new BMap.Map("QWTMAP");
-        var lng = "114.89";//x
-        var lat = "25.80";//y
-        var point = new BMap.Point(lng, lat);
-        var marker = new BMap.Marker(point);  // 创建标注
-        map.addOverlay(marker);              // 将标注添加到地图中
-        map.centerAndZoom(point, 15);
-        var opts = {
-            width: 200,     // 信息窗口宽度
-            height: 100,     // 信息窗口高度
-            title: "赣南师范大学地图", // 信息窗口标题
-            enableMessage: true,//设置允许信息窗发送短息
-        }
-        var infoWindow = new BMap.InfoWindow("赣南师范大学黄金校区", opts);  // 创建信息窗口对象
-        map.openInfoWindow(infoWindow, point); //开启信息窗口
-        marker.addEventListener("click", function () {
-            map.openInfoWindow(infoWindow, point); //开启信息窗口
-        });
-    </script>
+    <script src=""></script>
 </body>
 
 </html>

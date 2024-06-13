@@ -1,0 +1,298 @@
+html,
+body {
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px;
+    background-image: url('../素材/picture/主页.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.c {
+    width: 1240px;
+    margin: 0px auto;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+li {
+    list-style: none;
+}
+
+/* 头部导航 */
+.head {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(to right, #3cb2e3, #a9edfc, #6fd1c7, #5ccabc, #cbf3ed, #d5f8f1);
+    opacity: 0.9;
+    z-index: 9999;
+    top: 0;
+    width: 100%;
+
+    div {
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+}
+
+.head_l {
+    padding-left: 40px;
+    line-height: 50px;
+    font-size: 20px;
+
+    li a {
+        display: flex;
+        align-items: center;
+        color: black;
+
+        img {
+            top: 20px;
+        }
+    }
+}
+
+.head_c {
+    line-height: 50px;
+    margin: 0px auto;
+
+    h1 {
+        display: inline;
+
+        span {
+            display: inline-block;
+            font-size: 20px;
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            border: 2px solid rgb(195, 255, 247);
+            border-radius: 50% 50%;
+            background: linear-gradient(#dbfc48, #f1fa8f, #f6a078, #ff5452);
+        }
+    }
+}
+
+.head_r {
+    img {
+        margin-right: 10px;
+    }
+
+    ul {
+        display: flex;
+
+        li {
+
+            a {
+                color: #000;
+                margin-right: 15px;
+
+            }
+        }
+    }
+}
+
+/* ---------------------各网页导航栏--------------------- */
+
+#index_main {
+    position: static;
+    top: 45px;
+    width: 1120px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+}
+
+.nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+
+#index_main {
+    position: relative;
+    /* 如果不需要相对于其他元素定位，可以改为 static */
+    top: 45px;
+    width: 1120px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+}
+
+.nav {
+    position: sticky;
+    top: 0;
+    opacity: 0;
+    margin: -28px;
+    background-color: rgba(190, 255, 255, 0.8);
+    height: 77px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 8px rgba(5, 86, 58, 0.5);
+    transition: color 0.3s, transform 0.3s;
+    animation: fadeInDown 1s ease forwards;
+}
+
+/* 动画定义 */
+@keyframes fadeInDown {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.nav div.nav_main {
+    height: 80px;
+    margin-left: 100px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.nav div.nav_main ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav div.nav_main ul li {
+    height: 30px;
+    line-height: 30px;
+}
+
+.nav div.nav_main ul li a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: #000;
+}
+
+.nav div.nav_main ul li a img {
+    width: 30px;
+    padding-right: 8px;
+}
+
+.nav_main ul li a:hover {
+    transform: scale(1.05, 1.05);
+    color: rgb(0, 255, 0);
+}
+
+.nav_main ul li:hover ul {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: aqua;
+    border-radius: 5px;
+    z-index: 10;
+
+    li+li {
+        border-top: 1px solid #000;
+    }
+
+}
+
+#sign {
+    display: inline;
+    float: left;
+    width: 66px;
+    height: 66px;
+    border-radius: 50% 50%;
+    border: 2px solid #c13ee9;
+    margin: 5px 10px;
+    padding-right: 0;
+}
+
+#search {
+    form {
+        width: 196px;
+        height: 30px;
+        border: 2px solid #6739ff;
+        border-radius: 15px 15px;
+
+        input {
+            display: inline;
+            float: left;
+            margin-left: 10px;
+            background-color: transparent;
+            width: 156px;
+            height: 30px;
+            overflow: hidden;
+            border: none;
+        }
+
+        label {
+            button {
+                background-color: transparent;
+                border: none;
+                padding: 0;
+
+                img {
+                    float: right;
+                    width: 28px;
+                    height: 28px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+}
+
+#search form input:focus {
+    outline: none;
+}
+
+.hove {
+    color: rgb(255, 163, 106);
+    font-size: 18px;
+    font-weight: 700;
+}
+
+/* 主体 */
+/* 脚部 */
+.foot {
+    margin: 45px 0 0 0;
+    position: relative;
+    width: 100%;
+    float: left;
+    background: rgb(200, 200, 200);
+
+}
+
+.foot_ {
+    position: relative;
+
+    dl {
+        float: right;
+        font-size: 12px;
+        margin: 10px 50px;
+
+        dd {
+            height: 18px;
+            line-height: 18px;
+
+            a {
+                color: #000;
+            }
+        }
+    }
+}
+
+.clear::both {
+    content: "";
+    display: block;
+    clear: both;
+}
